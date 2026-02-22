@@ -46,6 +46,6 @@ input_data = pd.DataFrame([[
 if st.button("predict"):
   prediction=model.predict(input_data)
   if prediction =="white":
-    st.sucess("white wine")
+    st.success("white wine")
   else:
     st.error("red wine")
