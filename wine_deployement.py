@@ -25,7 +25,7 @@ total_sulfur_dioxide= st.number_input("total_sulfur_dioxide")
 density= st.number_input("density")
 pH= st.number_input("pH")
 sulphates= st.number_input("sulphates")
-alcohol= st.number_input("alcohol")
+alcohol= st.number_input("alcohol 🍺")
 quality= st.number_input("quality")
 
 input_data = pd.DataFrame([[
@@ -43,7 +43,7 @@ input_data = pd.DataFrame([[
     quality
 ]], columns=model.feature_names_in_)
 
-if st.button("predict"):
+if st.button(" 🟰 predict"):
   prediction=model.predict(input_data)
   if prediction =="white":
     st.success("white wine")
